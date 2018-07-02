@@ -40,7 +40,7 @@ public class WechatTransferService {
 		request.setOpenId(openId);
 		try {
 			String data = request.transferData();
-			SSLConnectionFactory factory = new SSLConnectionFactory("E:\\Workspaces\\MyEclipse10\\fhdoredpackagetask\\main\\resource\\cert" + File.separator + "1487722302" + ".p12", "1487722302");
+			SSLConnectionFactory factory = new SSLConnectionFactory("E:\\Workspaces\\MyEclipse10\\fhdoredpackagetask\\main\\resource\\cert" + File.separator + mchId + ".p12", mchId);
 			String result = WebUtil.post(transferUrl, data, "text/html", "UTF-8", factory);
 			System.out.println(result);
 		} catch (Exception e) {

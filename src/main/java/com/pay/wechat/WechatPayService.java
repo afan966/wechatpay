@@ -34,7 +34,7 @@ public class WechatPayService {
 		String orderId = "20180101";
 		String payment = "100";
 		String ip = "127.0.0.1";
-		String openId = "oy10b0ekbCLlcM5wTgsHoqvxfBtU";
+		String openId = "xxxx";
 		
 		WechatPrePayRequest request = new WechatPrePayRequest(appId, appSecret, mchId);
 		request.setTitle(title);
